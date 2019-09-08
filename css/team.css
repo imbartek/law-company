@@ -31,7 +31,7 @@ main .bg{
 }
 .menu{
     width: 130px;
-    height: 7vh;
+    height: 50px;
     position: fixed;
     top: 20px;
     left: 40vw;
@@ -135,6 +135,9 @@ main .bg{
     color: #fff;
     padding: 5%;
     grid-row: 2/3;
+}
+.description__title{
+    font-size: 1.7em;
 }
 .contact__form{
     display: grid;
