@@ -1,0 +1,25 @@
+.exit-btn{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+}
+.exit-btn__line{
+    border: 1px solid #fff;
+}
+.exit-btn__line:nth-child(1){
+    transform: rotate(45deg);
+    margin-top: 9px;
+}
+.exit-btn__line:nth-child(2){
+    transform: rotate(-45deg);
+    margin-top: -2px;
+}
+
+@media(max-width: 768px){
+    .exit-btn{
+        height: 25px;
+        width: 25px;
+    }
+}

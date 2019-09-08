@@ -1,0 +1,11 @@
+/*persons*/
+.person{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.person h5{
+    color: rgb(100, 100, 100);
+    font-size: 0.7em;
+}
