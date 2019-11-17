@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kancelaria</title>
+    <link rel="stylesheet" href="../css/team.css">
+    <link rel="stylesheet" href="../css/exit_btn.css">
+    <link rel="stylesheet" href="../css/persons.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="menu">
+        <div class="menu__hamburger">
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+            <div class="hamburger__line"></div>
+        </div>
+        <div class="menu__text">
+            <p>menu</p>
+        </div>
+    </nav>
+    <main>
+        <img src="../img/logo.jpg" alt="logo" class="logo">
+        <img src="../jpg/DSA_5035.jpg" alt="background" class="bg">
+        <!--Menu list-->
+        <div class="menu__list">
+            <div class="exit-btn">
+                <div class="exit-btn__line"></div>
+                <div class="exit-btn__line"></div>
+            </div>
+            <ul>
+                <li><a href="../index.html">o kancelarii</a></li>
+                <li><a href="news.html">aktualności</a></li>
+                <li><a href="team.html">zespół</a></li>
+                <li><a href="contact.html">kontakt</a></li>
+            </ul>
+        </div>
+        <!--Menu list-->
+    </main>
+    <section>
+            <header class="contact__title">
+                <h1>kontakt</h1>
+            </header>
+            <div class="contact_and_map">
+            <article class="contact__data">
+                <h2>Nazwa firmy</h2>
+                <p>ul.nazwa nr</p>
+                <p>kod pocztowy miasto</p>
+                <p>Tel. +48 000 000 000</p>
+                <p>E-mail: nazwa@example.com</p>
+                <p>NIP: 000-000-00-00</p>
+                <p>REGON: 000000000</p>
+                <p>KRS: 1112223334</p>
+            </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d608.3955565405327!2d16.913520329765984!3d52.41424743160386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b4b2b506e65%3A0x5c6f6798f55003a3!2sDalc%20i%20Ochocki-Doradcy%20Sp.%20z%20o.o.!5e0!3m2!1spl!2spl!4v1573993617217!5m2!1spl!2spl" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" class="contact__map"></iframe>
+            </div>
+            <section class="contact">
+                    <header>
+                        <h1>jak się z nami skontaktować?</h1>
+                    </header>
+                    <div class="contact__form">
+                        <article class="contact__description">
+                            <p>Chętnie znajdziemy czas, aby porozmawiać o potrzebach Twojego Przedsiębiorstwa – umów się na niezobowiązującą rozmowę telefoniczną lub spotkanie z nami.</p>
+                        </article>
+                        <article>
+                                <div id="send_form_status"></div>
+                                <form method="post" action="mail.php" id="contact_form">
+                                    <ul class="form-style-1">
+                                        <li><input type="text" name="name" id="name" class="field-divided transparent" placeholder="imię i nazwisko..." required/> 
+                                            <input type="text" name="brand" id="brand" class="field-divided transparent" placeholder="firma..." /></li>
+                                        <li>
+                                            <input type="email" name="email" id="email" class="field-divided transparent" placeholder="adres e-mail..." required/>
+                                            <input type="tel" name="phone" id="phone" class="field-divided transparent" placeholder="numer telefonu..."/>
+                                        </li>
+                                        <li>
+                                            <textarea name="message" id="message" class="field-long field-textarea transparent" placeholder="treść wiadomości..."></textarea>
+                                        </li>
+                                        <li>
+                                            <input id="sendBtn" type="submit" value="Wyślij" />
+                                        </li>
+                                    </ul>
+                                    </form>
+                        </article>
+                    </div>
+                </section>
+    </section>
+    <script src="../js/menu.js"></script>
+</body>
+</html>
