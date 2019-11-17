@@ -119,7 +119,7 @@ main .bg{
 }
 .team__person{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     align-items: center;
 }
 .team__title{
@@ -219,12 +219,21 @@ select{
     .menu{
         left: 84vw;
         padding-top: 10px;
+        width: 50px;
     }
     .menu__list ul{
         margin-top: 85%;
     }
     .menu__list ul li{
         font-size: 1em;
+    }
+    .menu__hamburger{
+        display: flex;
+        flex-flow: column;
+        width: 40px;
+    }
+    .menu__text{
+        display: none;
     }
     .team{
         grid-column: 1/2;
