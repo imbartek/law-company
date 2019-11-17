@@ -1,0 +1,23 @@
+.news__title{
+    text-align: center;
+    padding: 5%;
+}
+main{
+    height: 100vh;
+}
+.news__object{
+    padding: 3%;
+}
+.news__object--date{
+    margin-bottom: 2%;
+    color: #747474;
+    font-weight: bold;
+}
+.news__object--description{
+    color: #747474;
+}
+@media(max-width: 768px){
+    .menu{
+        left: 35vw;
+    }
+}

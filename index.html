@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kancelaria</title>
-    <link rel="stylesheet" href="../law-company/css/main.css">
-    <link rel="stylesheet" href="../law-company/css/exit_btn.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/exit_btn.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
     <nav class="menu">
@@ -21,7 +22,8 @@
         </div>
     </nav>
     <main>
-        <img src="../law-company/img/logo.jpg" alt="logo" class="logo">
+        <div class="bg_image"></div>
+        <img src="img/logo.jpg" alt="logo" class="logo">
         <header class="main__title">
             <h1>prawo</h1>
             <h3>to dla nas suma twoich</h3>
@@ -35,11 +37,9 @@
             </div>
             <ul>
                 <li><a href="index.html">o kancelarii</a></li>
-                <li><a href="#">aktualności</a></li>
-                <li><a href="#">oferta</a></li>
-                <li><a href="../law-company/sites/team.html">zespół</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">kontakt</a></li>
+                <li><a href="./sites/news.html">aktualności</a></li>
+                <li><a href="./sites/team.html">zespół</a></li>
+                <li><a href="./sites/contact.html">kontakt</a></li>
             </ul>
         </div>
         <!--Menu list-->
@@ -71,18 +71,20 @@
                 <p>Chętnie znajdziemy czas, aby porozmawiać o potrzebach Twojego Przedsiębiorstwa – umów się na niezobowiązującą rozmowę telefoniczną lub spotkanie z nami.</p>
             </article>
             <article>
-                    <form>
+                    <div id="send_form_status"></div>
+                    <form method="post" action="mail.php" id="contact_form">
                         <ul class="form-style-1">
-                            <li><input type="text" name="field1" class="field-divided transparent" placeholder="imię i nazwisko..." required/> <input type="text" name="field2" class="field-divided transparent" placeholder="firma..." /></li>
+                            <li><input type="text" name="name" id="name" class="field-divided transparent" placeholder="imię i nazwisko..." required/> 
+                                <input type="text" name="brand" id="brand" class="field-divided transparent" placeholder="firma..." /></li>
                             <li>
-                                <input type="email" name="field3" class="field-divided transparent" placeholder="adres e-mail..." required/>
-                                <input type="tel" name="field4" class="field-divided transparent" placeholder="numer telefonu..."/>
+                                <input type="email" name="email" id="email" class="field-divided transparent" placeholder="adres e-mail..." required/>
+                                <input type="tel" name="phone" id="phone" class="field-divided transparent" placeholder="numer telefonu..."/>
                             </li>
                             <li>
-                                <textarea name="field5" id="field5" class="field-long field-textarea transparent" placeholder="treść wiadomości..."></textarea>
+                                <textarea name="message" id="message" class="field-long field-textarea transparent" placeholder="treść wiadomości..."></textarea>
                             </li>
                             <li>
-                                <input type="submit" value="Wyślij" />
+                                <input id="sendBtn" type="submit" value="Wyślij" />
                             </li>
                         </ul>
                         </form>
@@ -92,6 +94,7 @@
     <footer>
 
     </footer>
-    <script src="../law-company/js/menu.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/send.js"></script>
 </body>
 </html>

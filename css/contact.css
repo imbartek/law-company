@@ -1,0 +1,47 @@
+.contact__title{
+    padding-top: 5vh;
+    font-size: 2em;
+    text-align: center;
+}
+.contact{
+    background-color: #163D45;
+    color: #fff;
+    padding: 5%;
+}
+.contact__form{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+.contact_and_map{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    margin-bottom: 5%;
+}
+.contact__data{
+    padding: 5%;
+}
+.contact__data h2, p{
+    padding: 0 0 2% 2%;
+}
+.contact__map{
+    margin-left: 5%;
+}
+@media(max-width: 768px){
+    .contact h1{
+        font-size: 1.7em;
+        text-align: center;
+    }
+    .contact__form{
+        grid-template-columns: 1fr;
+    }
+    .form-style-1{
+        margin: 0;
+    }
+    .form-style-1 li{
+        display: grid;
+    }
+    .contact__description,
+    .transparent{
+        width: 90vw !important;
+    }
+}

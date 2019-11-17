@@ -12,8 +12,26 @@ h1{
 }
 main{
     height: 100vh;
-    background-image: url(https://picsum.photos/id/280/1920/1920);
+    
+    
     margin-top: -65px;
+}
+.bg_image{
+        
+        left: 0;
+        right: 0;
+        z-index: -1;
+        display: block;
+        background-image: url("../jpg/DSA_5039.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
 }
 .main__title{
     position: absolute;
@@ -83,12 +101,14 @@ main{
 }
 .main__title h1{
     font-size: 4em;
-    color: rgb(100, 99, 99);
+    color: #163D45;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     margin: 0;
 }
 .main__title h3{
     font-size: 3em;
-    color: rgb(114, 113, 113);
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     text-transform: uppercase;
 }
 .menu__hamburger{
@@ -247,3 +267,4 @@ select{
     .transparent{
         width: 90vw !important;
     }
+}

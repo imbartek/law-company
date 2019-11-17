@@ -7,7 +7,8 @@
 }
 body{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    height: 100vh;
 }
 h1{
     text-transform: uppercase;
@@ -119,13 +120,15 @@ main .bg{
 .team__person{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(4, 200px);
     align-items: center;
 }
 .team__title{
     padding-top: 5vh;
     font-size: 2em;
     text-align: center;
+}
+.team__title h1{
+    font-family: 'Roboto Slab', serif;
 }
 .team ul li{
     list-style: none;
@@ -214,7 +217,7 @@ select{
 
 @media(max-width: 768px){
     .menu{
-        left: 35vw;
+        left: 84vw;
         padding-top: 10px;
     }
     .menu__list ul{
@@ -227,6 +230,6 @@ select{
         grid-column: 1/2;
         grid-row: 3/4;
     }
-    .team__person{
-        grid-template-rows: repeat(9, 200px);
+    .person{
+        padding-bottom: 10%;
     }
