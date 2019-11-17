@@ -1,0 +1,17 @@
+.menu{
+    width: 50px;
+}
+@media(max-width: 768px){
+    .menu{
+        left: 84vw;
+        padding-top: 10px;
+    }
+    .menu__hamburger{
+        display: flex;
+        flex-flow: column;
+        width: 40px;
+    }
+    .menu__text{
+        display: none;
+    }
+}
