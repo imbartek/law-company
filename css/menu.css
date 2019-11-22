@@ -1,8 +1,7 @@
-.menu{
-    width: 50px;
-}
+
 @media(max-width: 768px){
     .menu{
+        width: 50px;
         left: 84vw;
         padding-top: 10px;
     }
