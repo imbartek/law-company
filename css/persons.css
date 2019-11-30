@@ -12,3 +12,9 @@
 .person img{
     height: 400px;
 }
+.person p{
+    padding: 15px;
+}
+.person a{
+    color: #fff;
+}

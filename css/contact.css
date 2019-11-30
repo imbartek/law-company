@@ -26,6 +26,29 @@
 .contact__map{
     margin-left: 5%;
 }
+button{
+    background: none;
+    height: 80px;
+    border: 1px solid #163D45;
+    border-radius: 4px;
+    transition: .6s;
+}
+button:focus{
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+    background: #163D45;
+    color: #fff;
+}
+button a{
+    text-decoration: none;
+    color: #163D45;
+    padding: 30px;
+}
+button a:hover{
+    color: #fff;
+}
 @media(max-width: 768px){
     .contact h1{
         font-size: 1.7em;

@@ -12,8 +12,6 @@ h1{
 }
 main{
     height: 100vh;
-    
-    
     margin-top: -65px;
 }
 .bg_image{
@@ -132,6 +130,11 @@ main{
 .about{
     display: grid;
     grid-template-columns: auto auto;
+}
+.about__title{
+    padding: 5% 0 5% 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 .about__who, .about__offert{
     padding: 15%;
