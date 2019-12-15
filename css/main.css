@@ -5,6 +5,9 @@
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 h1{
     text-transform: uppercase;
     font-size: 2em;
@@ -160,6 +163,9 @@ main{
 .contact__form{
     display: grid;
     grid-template-columns: 30% auto;
+}
+.statue{
+    color: #fff;
 }
 
 /* form */

@@ -5,6 +5,9 @@
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
