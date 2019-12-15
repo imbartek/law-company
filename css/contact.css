@@ -1,30 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    overflow-x: hidden;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: 3vh;
+}
+.menu{
+    width: 130px;
+    height: 50px;
+    position: fixed;
+    top: 20px;
+    left: 40vw;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    background-color: #F0F0F0;
+    z-index: 1;
+    cursor: pointer;
+}
+.menu__list{
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    position: fixed;
+    background-color: rgb(30, 95, 35);
+    color: #fff;
+    padding: 5%;
+    z-index: 1;
+    transition: all 1s ease-out;
+}
+.menu__list.active{
+    display: block;
+    top: 0;
+    left: 50%;
+}
+.hidden{
+    display: none;
+}
+.menu__list ul{
+    margin-top: 25%;
+}
+.menu__list ul li{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 3% 0 3% 0;
+    margin-top: -1px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.menu__list ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+}
+.menu__hamburger{
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+}
+.hamburger__line{
+    border: 1px solid black;
+    margin: 5px 10px 0 10px;
+    width: 20px;
+}
+.menu__text{
+    width: 50%;
+    margin-top: 3px;
+}
+.menu__text p{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 0;
+}
 .contact__title{
     padding-top: 5vh;
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
+    text-transform: uppercase;
 }
 .contact{
-    background-color: #163D45;
+    background-color: rgb(30, 95, 35);
     color: #fff;
     padding: 5%;
 }
 .contact__form{
     display: grid;
     grid-template-columns: 30% auto;
+    margin-bottom: 10vh;
 }
-.contact_and_map{
+.statue{
+    color: #fff;
+}
+/* form */
+.form-style-1 {
+	margin: 0 0 0 10%;
+	width: 70%;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
-    margin-bottom: 5%;
+}
+.form-style-1 li {
+	padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=number],
+.form-style-1 input[type=email],
+.form-style-1 input[type=tel],
+textarea, 
+select{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 7px;
+    margin: 10px 0 10px 0;
+    border: 3px solid #fff;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;	
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 input[type=tel]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	-moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 3px solid #88D5E9;
+}
+.form-style-1 .field-divided{
+    width: 40%;
+}
+
+.form-style-1 .field-long{
+	width: 90%;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+    background: #4B99AD;
+    margin-top: 10%;
+	padding: 8px 15px 8px 15px;
+	border: none;
+    color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: #4691A4;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.transparent{
+    background-color: transparent;
+    color: #fff;
+}
+main{
+    display: grid;
+    grid-template-rows:0% 50% 50%;
+}
+main .bgcontact{
+    height: 100%;
+    width: 100%;
 }
 .contact__data{
     padding: 5%;
 }
 .contact__data h2, p{
-    padding: 0 0 2% 2%;
+    padding: 0 0 3% 2%;
+    text-align: justify;
 }
-.contact__map{
-    margin-left: 5%;
+.logo{
+    width: 10vw;
+    position: absolute;
+    top: 20px;
+    right: 10px;
 }
 button{
     background: none;
@@ -38,18 +203,28 @@ button:focus{
 }
 button:hover{
     cursor: pointer;
-    background: #163D45;
+    background: rgb(30, 95, 35);
     color: #fff;
 }
 button a{
     text-decoration: none;
-    color: #163D45;
+    color: rgb(30, 95, 35);;
     padding: 30px;
 }
 button a:hover{
     color: #fff;
 }
 @media(max-width: 768px){
+    .container{
+        grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
+        height: 150%;
+    }
+    .menu__list ul {
+        margin-top: 85%;
+    }
+    .menu__list ul li {
+        font-size: 1em;
+    }
     .contact h1{
         font-size: 1.7em;
         text-align: center;

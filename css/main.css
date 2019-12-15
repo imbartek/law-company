@@ -40,7 +40,7 @@ main{
     width: 10vw;
     position: absolute;
     top: 20px;
-    left: 10px;
+    right: 10px;
 }
 .menu{
     width: 130px;
@@ -61,7 +61,7 @@ main{
     top: 0;
     left: 100%;
     position: fixed;
-    background-color: #163D45;
+    background-color: rgb(30, 95, 35);
     color: #fff;
     padding: 5%;
     z-index: 1;
@@ -139,17 +139,23 @@ main{
 .about__who, .about__offert{
     padding: 15%;
 }
+.about__who h1{
+    text-align: justify;
+}
 .about__who p, .about__offert p{
     margin-bottom: 2vh;
 }
 .about__offert{
-    background-color: #163D45;
+    background-color: rgb(30, 95, 35);
     color: #fff;
 }
 .contact{
-    background-color: #163D45;
+    background-color: rgb(30, 95, 35);
     color: #fff;
     padding: 5%;
+}
+.contact__description{
+    text-align: justify;
 }
 .contact__form{
     display: grid;
@@ -225,6 +231,9 @@ select{
 /* form */
 
 @media(max-width: 768px){
+    .logo{
+        width: 25vw;
+    }
     .menu{
         left: 35vw;
         padding-top: 10px;

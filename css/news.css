@@ -1,6 +1,19 @@
 body{
     background-color: #fff;
 }
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
+    background-color: #fff;
+    height: 100vh;
+}
+main .bgnews{
+    height: 100%;
+    width: 100%;
+}
+.news{
+    overflow: scroll;
+}
 .news__title{
     text-align: center;
     padding: 5%;
@@ -20,6 +33,12 @@ main{
     color: #747474;
 }
 @media(max-width: 768px){
+    .container {
+        height: 100%;
+    }
+    .news{
+        height: 100vh;
+    }
     .menu{
         left: 35vw;
     }

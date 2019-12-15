@@ -2,7 +2,7 @@
 @media(max-width: 768px){
     .menu{
         width: 50px;
-        left: 84vw;
+        left: 80;
         padding-top: 10px;
     }
     .menu__hamburger{
