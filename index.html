@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="kancelaria, sroda slaska, adwokat, radca, środa śląska, prawnik środa śląska, rozwód środa slaska, rozwód Wrocław, kancelaria środa slaska, porady prawne środa slaska">
+    <meta name="keywords" content="Kancelaria, sroda slaska, adwokacka, radcowska">
     <title>Malec-Pawlak Kancelaria Adwokacko-Radcowska</title>
     <meta name="robots" content="index/follow">
     <meta name="description" content="Malec-Pawlak Kancelaria Adwokacko-Radcowska">
@@ -12,7 +12,9 @@
     <link rel="shortcut icon" href="favicon.png"/>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/exit_btn.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/91ced36fc1.js" crossorigin="anonymous"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
@@ -30,9 +32,7 @@
         <div class="bg_image"></div>
         <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
         <header class="main__title">
-            <h1>prawo</h1>
-            <h3>to dla nas suma twoich</h3>
-            <h1>możliwości</h1>
+            
         </header>
         <!--Menu list-->
         <div class="menu__list">
@@ -81,7 +81,7 @@
                 </li>
                 <li>
                     <h3>Prawo cywilne</h3>
-                    <p>Zniesienie współwłasności, sporządzanie i analiza prawna umów, sprawy o zapłatę, obsługa prawna spółek</p>
+                    <p>Zniesienie współwłasności, sporządzanie i analiza prawna umów, sprawy o zapłatę</p>
                 </li>
                 <li>
                     <h3>Prawo handlowe</h3>
@@ -138,20 +138,21 @@
     </section>
     <section class="contact">
         <header>
-            <h1>jak się z nami skontaktować?</h1>
+            <h1>kontakt</h1>
         </header>
         <div class="contact__form">
             <article class="contact__description">
-                <p>Chętnie znajdziemy czas, aby porozmawiać o potrzebach Twojego Przedsiębiorstwa – umów się na niezobowiązującą rozmowę telefoniczną lub spotkanie z nami.</p>
+                <p>Wiecie już Państwo czym nasza Kancelaria się zajmuje. Jeśli mają Państwo sprawę, w której możemy Wam pomóc, zapraszamy na spotkanie w siedzibie Kancelarii. Jeśli nie ma możliwości osobistego spotkania, prosimy o kontakt mailowy, telefoniczny lub za pomocą formularza kontaktowego.</p>
+                <p>Zapraszamy do współpracy.</p>
             </article>
             <article>
                     <div id="send_form_status"></div>
-                    <form method="post" action="mail.php" id="contact_form">
+                    <form action="https://formspree.io/xyyzrlvk" method="POST" id="contact_form">
                         <ul class="form-style-1">
                             <li><input type="text" name="name" id="name" class="field-divided transparent" placeholder="imię i nazwisko..." required/> 
                                 <input type="text" name="brand" id="brand" class="field-divided transparent" placeholder="firma..." /></li>
                             <li>
-                                <input type="email" name="email" id="email" class="field-divided transparent" placeholder="adres e-mail..." required/>
+                                <input type="email" name="_replyto" id="email" class="field-divided transparent" placeholder="adres e-mail..." required/>
                                 <input type="tel" name="phone" id="phone" class="field-divided transparent" placeholder="numer telefonu..."/>
                             </li>
                             <li>
@@ -166,7 +167,13 @@
         </div>
     </section>
     <footer>
-
+        <a href="https://www.facebook.com/maleckancelaria/"><i class="fas fa-map-marker-alt"></i>Środa Śląska, ul. Malczycka 12-16 lok. 15</a>
+        <a href="tel:578 975 795"><i class="fas fa-phone-alt"></i>578-975-795</a>
+        <div class="social_media">
+            <a href=""><i class="far fa-envelope"></i></a>
+            <a href="https://www.instagram.com/maleckancelaria/"><i class="fab fa-instagram"></i></a>
+            <a href="https://pl.linkedin.com/in/karolina-malec-pawlak-001ab791"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/send.js"></script>

@@ -10,90 +10,98 @@
     <meta name="description" content="Malec-Pawlak Kancelaria Adwokacko-Radcowska">
     <link rel="apple-touch-icon" sizes="57x57" href="favicon.png">
     <link rel="shortcut icon" href="favicon.png"/>
-    <link rel="stylesheet" href="../css/team.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/exit_btn.css">
     <link rel="stylesheet" href="../css/persons.css">
-    <link rel="stylesheet" href="../css/news.css">
-    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/91ced36fc1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="menu">
-        <div class="menu__hamburger">
-            <div class="hamburger__line"></div>
-            <div class="hamburger__line"></div>
-            <div class="hamburger__line"></div>
-        </div>
-        <div class="menu__text">
-            <p>menu</p>
-        </div>
-    </nav>
-    <main>
-        <a href="../index.html"><img src="../img/logo.png" alt="logo" class="logo"></a>
-        <img src="../jpg/DSA_5035-min.jpg" alt="background" class="bg">
-        <!--Menu list-->
-        <div class="menu__list">
-            <div class="exit-btn">
-                <div class="exit-btn__line"></div>
-                <div class="exit-btn__line"></div>
-            </div>
-            <ul>
-                <li><a href="../index.html">o kancelarii</a></li>
-                <li><a href="news.html">aktualności</a></li>
-                <li><a href="team.html">zespół</a></li>
-                <li><a href="contact.html">kontakt</a></li>
-            </ul>
-        </div>
-        <!--Menu list-->
-    </main>
-    <section>
-            <header class="contact__title">
-                <h1>kontakt</h1>
-            </header>
-            <div class="contact_and_map">
-            <article class="contact__data">
-                <h2>Malec-Pawlak Kancelaria Adwokacko-Radcowska</h2>
-                <p>Ul. Malczycka 12-16 lok. 15</p>
-                <p>55-300 Środa Śląska</p>
-                <p>Tel.<a href="tel:578 975 795">578-975-795</a></p>
-                <p>E-mail: poczta@maleckancelaria.pl</p>
-                <p>NIP: 8942998793</p>
-                <p>Nr konta: 80 1950 0001 2006 0067 9126 0002</p>
-                <p>Zachęcamy także do skorzystania z porady on-line (proszę o przesłanie wiadomości e-mail na podany wyżej adres lub skorzystanie z formularza kontaktowego zamieszczonego na stronie). Regulamin świadczenia usług on-line zamieszczony jest pod przyciskiem „Polityka Prywatności i Regulamin”.</p>
-                <button><a href="../Regulamin-świadczenia-usług-drogą-elektroniczną.pdf">Polityka Prywatności i Regulamin</a></button>
-            </article>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312.73201897676563!2d16.587115172784397!3d51.16644132586981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fa262c8d3edb9%3A0xadffacbf88191c9c!2zTWFsY3p5Y2thIDEyLzE1LCA1NS0zMDAgxZpyb2RhIMWabMSFc2th!5e0!3m2!1spl!2spl!4v1575114321256!5m2!1spl!2spl" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-            <section class="contact">
-                    <header>
-                        <h1>jak się z nami skontaktować?</h1>
-                    </header>
-                    <div class="contact__form">
-                        <article class="contact__description">
-                            <p>Chętnie znajdziemy czas, aby porozmawiać o potrzebach Twojego Przedsiębiorstwa – umów się na niezobowiązującą rozmowę telefoniczną lub spotkanie z nami.</p>
-                        </article>
-                        <article>
-                                <div id="send_form_status"></div>
-                                <form method="post" action="mail.php" id="contact_form">
-                                    <ul class="form-style-1">
-                                        <li><input type="text" name="name" id="name" class="field-divided transparent" placeholder="imię i nazwisko..." required/> 
-                                            <input type="text" name="brand" id="brand" class="field-divided transparent" placeholder="firma..." /></li>
-                                        <li>
-                                            <input type="email" name="email" id="email" class="field-divided transparent" placeholder="adres e-mail..." required/>
-                                            <input type="tel" name="phone" id="phone" class="field-divided transparent" placeholder="numer telefonu..."/>
-                                        </li>
-                                        <li>
-                                            <textarea name="message" id="message" class="field-long field-textarea transparent" placeholder="treść wiadomości..."></textarea>
-                                        </li>
-                                        <li>
-                                            <input id="sendBtn" type="submit" value="Wyślij" />
-                                        </li>
-                                    </ul>
-                                    </form>
-                        </article>
+    <div class="container">
+        <nav class="menu">
+                <div class="menu__hamburger">
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                </div>
+                <div class="menu__text">
+                    <p>menu</p>
+                </div>
+            </nav>
+            <main>
+                <a href="../index.html"><img src="../img/logo.png" alt="logo" class="logo"></a>
+                <img src="../jpg/DSA_5035-min.jpg" alt="background" class="bgcontact">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2501.862896847905!2d16.58482931611813!3d51.166316979580664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fa262c8d3edb9%3A0xadffacbf88191c9c!2zTWFsY3p5Y2thIDEyLzE1LCA1NS0zMDAgxZpyb2RhIMWabMSFc2th!5e0!3m2!1spl!2spl!4v1575820387355!5m2!1spl!2spl" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
+                <!--Menu list-->
+                <div class="menu__list">
+                    <div class="exit-btn">
+                        <div class="exit-btn__line"></div>
+                        <div class="exit-btn__line"></div>
                     </div>
-                </section>
-    </section>
+                    <ul>
+                        <li><a href="../index.html">o kancelarii</a></li>
+                        <li><a href="news.html">aktualności</a></li>
+                        <li><a href="team.html">zespół</a></li>
+                        <li><a href="contact.html">kontakt</a></li>
+                    </ul>
+                </div>
+                <!--Menu list-->
+            </main>
+            <section class="left_side">
+                    <header class="contact__title">
+                        <h1>kontakt</h1>
+                    </header>
+                    <article class="contact__data">
+                        <h2>Malec-Pawlak Kancelaria Adwokacko-Radcowska</h2>
+                        <p>Ul. Malczycka 12-16 lok. 15</p>
+                        <p>55-300 Środa Śląska</p>
+                        <p>Tel.<a href="tel:578 975 795">578-975-795</a></p>
+                        <p>E-mail: poczta@maleckancelaria.pl</p>
+                        <p>NIP: 8942998793</p>
+                        <p>Nr konta: 80 1950 0001 2006 0067 9126 0002</p>
+                        <p>Zachęcamy także do skorzystania z porady on-line (proszę o przesłanie wiadomości e-mail na podany wyżej adres lub skorzystanie z formularza kontaktowego zamieszczonego na stronie). Regulamin świadczenia usług on-line zamieszczony jest pod przyciskiem „Polityka Prywatności i Regulamin”.</p>
+                        <button><a href="../Regulamin-świadczenia-usług-drogą-elektroniczną.pdf">Polityka Prywatności i Regulamin</a></button>
+                    </article>
+                    <section class="contact">
+                            <header>
+                                <h1>jak się z nami skontaktować?</h1>
+                            </header>
+                            <div class="contact__form">
+                                <article class="contact__description">
+                                    <p>Chętnie znajdziemy czas, aby porozmawiać o potrzebach Twojego Przedsiębiorstwa – umów się na niezobowiązującą rozmowę telefoniczną lub spotkanie z nami.</p>
+                                </article>
+                                <article>
+                                        <div id="send_form_status"></div>
+                                        <form action="https://formspree.io/xyyzrlvk" method="POST" id="contact_form">
+                                            <ul class="form-style-1">
+                                                <li><input type="text" name="name" id="name" class="field-divided transparent" placeholder="imię i nazwisko..." required/> 
+                                                    <input type="text" name="brand" id="brand" class="field-divided transparent" placeholder="firma..." /></li>
+                                                <li>
+                                                    <input type="email" name="_replyto" id="email" class="field-divided transparent" placeholder="adres e-mail..." required/>
+                                                    <input type="tel" name="phone" id="phone" class="field-divided transparent" placeholder="numer telefonu..."/>
+                                                </li>
+                                                <li>
+                                                    <textarea name="message" id="message" class="field-long field-textarea transparent" placeholder="treść wiadomości..."></textarea>
+                                                </li>
+                                                <li>
+                                                    <input id="sendBtn" type="submit" value="Wyślij" />
+                                                </li>
+                                            </ul>
+                                            </form>
+                                </article>
+                            </div>
+                        </section>
+    </div>
+    <footer>
+        <a href="https://www.facebook.com/maleckancelaria/"><i class="fas fa-map-marker-alt"></i>Środa Śląska, ul. Malczycka 12-16 lok. 15</a>
+        <a href="tel:578 975 795"><i class="fas fa-phone-alt"></i>578-975-795</a>
+        <div class="social_media">
+            <a href=""><i class="far fa-envelope"></i></a>
+            <a href="https://www.instagram.com/maleckancelaria/"><i class="fab fa-instagram"></i></a>
+            <a href="https://pl.linkedin.com/in/karolina-malec-pawlak-001ab791"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
     <script src="../js/menu.js"></script>
 </body>
 </html>
